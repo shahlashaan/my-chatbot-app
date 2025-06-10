@@ -13,8 +13,8 @@ export async function getAuth0Client(): Promise<Auth0Client> {
     // PUBLIC_AUTH0_DOMAIN
 
     auth0Client = await createAuth0Client({
-        domain: import.meta.env.AUTH0_DOMAIN,
-        clientId: import.meta.env.AUTH0_CLIENT_ID,
+        domain: import.meta.env.PUBLIC_AUTH0_DOMAIN,
+        clientId: import.meta.env.PUBLIC_AUTH0_CLIENT_ID,
         authorizationParams: {
             audience: import.meta.env.AUTH0_AUDIENCE,
             redirect_uri: window.location.origin,

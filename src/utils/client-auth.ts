@@ -6,12 +6,6 @@ export async function getAuth0Client(): Promise<Auth0Client> {
     if (auth0Client) return auth0Client;
 
 
-    //   AUTH0_AUDIENCE
-    // AUTH0_CLIENT_ID
-    // AUTH0_ISSUER_BASE_URL
-    // PUBLIC_AUTH0_CLIENT_ID
-    // PUBLIC_AUTH0_DOMAIN
-
     auth0Client = await createAuth0Client({
         domain: import.meta.env.PUBLIC_AUTH0_DOMAIN,
         clientId: import.meta.env.PUBLIC_AUTH0_CLIENT_ID,

@@ -9,6 +9,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.9.2"
+    "astro": "^5.9.2",
+    "@auth0/auth0-spa-js": "^2.2.0",
+    "@netlify/functions": "^4.1.4",
+    "jose": "^6.0.11"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0"
   }
 }
